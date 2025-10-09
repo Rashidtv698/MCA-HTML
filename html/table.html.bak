@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>TABLE</title>
+</head>
+<body bgcolor="cyan">
+	<center>
+	<h1><b>NUMBER PUZZLE</b></h1>
+	<table border="1px" height="300px" width="300px">
+	<tr>
+	<th rowspan="5">10</th>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	<th rowspan="5">10</th>
+
+	</tr>
+	<tr>
+	<td colspan="2">5</td>
+	<td colspan="2">6</td>
+	</tr>
+	<tr>
+	<td colspan="1">7</td>
+	<td colspan="3">8</td>
+	</tr>
+	<tr>
+	<td colspan="4">9</td>
+	</tr>
+	</table>
+</center>
+</body>
+</html>
+
+

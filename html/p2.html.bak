@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>link to list</title>
+</head>
+<body bgcolor="cyan">
+	<center>
+	<h1 id="heading"><b>MESCE</b></h1>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZPG98b61W_5JlMg1KL4zoc1H0eLejhA6yQ&s" alt="not found">
+	</center>
+
+	<h2><u>courses</u></h2>
+	</center>
+	<dl>
+		<dt>PG</dt>
+		 <dd>MCA</dd>
+		 <dd>MTECH</dd>
+		 <dd>MBA</dd>
+		 
+		<dt>UG</dt>
+		 <dd>BTECH</dd>
+		 <dd>BBA</dd>
+		 <dd>BCA</dd>
+	</dl>
+	<center><table border="1px">
+	<tr>
+		<th>Programs</th>
+		<th>Duration</th>
+		<th>Fess</th>
+		<th>Rating</th>
+	</tr>
+	<tr>
+		<td>MCA</td>
+		<td>2 years</td>
+		<td>1.5 lakhs</td>
+		<td>4.0</td>
+	</tr>
+	<tr>
+		<td>BCA</td>
+		<td>2 years</td>
+		<td>1 lakhs</td>
+		<td>4.5</td>
+
+	</tr>
+
+	<tr>
+		<td>MBA</td>
+		<td>2 years</td>
+		<td>2.5 lakhs</td>
+		<td>4.3</td>
+
+	</tr>
+	<tr>
+		<td>BBA</td>
+		<td>2 years</td>
+		<td>1 lakhs</td>
+		<td>3.0</td>
+
+	</tr>
+	</table></center>
+	<br><br>
+		<br><br>
+    	<br><br>
+		<footer><center><a href="#heading">top</a></footer>
+
+</body>
+
+</html>

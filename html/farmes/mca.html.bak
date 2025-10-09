@@ -1,0 +1,9 @@
+<html>
+<head><title>mca</title></head>
+<body bgcolor="lightcoral">
+ <h1 align = "center">Department of  MCA</h1>
+ <p>Master of Computer Applications, a two-year postgraduate program that provides specialized knowledge in computer applications,
+ software development, and advanced IT fields like data science, cybersecurity, and cloud computing</p>
+ <a href="first_year.html">Frist year</a>
+</body>
+</html>
