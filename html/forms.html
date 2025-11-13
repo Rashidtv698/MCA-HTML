@@ -1,53 +1,52 @@
+<!DOCTYPE html>
 <html>
-<head><title>Forms</title></head>
-<body bgcolor="ADD8E6">
-<center><h1>Registration form</h1></center>
+<head>
+<title>Registration Form</title>
+<style>
+body{background:#ADD8E6;font-family:Arial;margin:0}
+form{background:#fff;width:350px;margin:40px auto;padding:18px;border-radius:10px;box-shadow:0 0 8px #888}
+h1{color:#003366;text-align:center;margin:0 0 12px}
+label{display:inline-block;width:110px;font-weight:600;margin-bottom:8px}
+input,select,textarea{width:200px;padding:5px;border:1px solid #ccc;border-radius:5px}
+textarea{height:50px;resize:none}
+fieldset{border:1px solid #ccc;border-radius:5px;padding:8px}
+button{background:#003366;color:#fff;border:none;padding:7px 15px;border-radius:5px;cursor:pointer;margin:5px}
+.center{text-align:center}
+.radio-group{display:inline-flex;gap:10px;align-items:center}
+.radio-inline{display:inline-flex;align-items:center;gap:6px}
+</style>
+</head>
+<body>
 <form>
-<label>Name </label>
-<input type="text" required><br><br>
-<label>Email</label>
-<input type="email"><br><br>
-<label>Password</label>
-<input type="password" maxlength="10"><br><br>
-<label>Mobile</label>
-<input type="tel"maxlength="13" value="+91" pattern="[0-9,+]*"><br><br>
-<label>Address</label>
-<textarea></textarea><br><br>
-<label>DOB</label>
-<input type="date"><br><br>
-<label>Nationality</label>
-<select>
-<option>Indian</option>
-<option>American</option>
-<option>gulf</option>
-</select>
-<br><br>
-<label>Gender</label>
-<input type="radio" name="gender"></input>
-<label>male</label>
-<input type="radio" name="gender"></input>
-<label>female</label>
-<input type="radio" name="gender">
-<label>other</label>
-<br>
-<br>
-<fieldset>
-<legend>Languges known</legend>
-<br> 
-<input type="checkbox" id="Malayalam"></input>
-<label for="Malayalam">Malayalam</label><br>
-<input type="checkbox" id="Hindi"></input>
-<label for="Hindi">Hindi</label><br>
-<input type="checkbox" id="English"></input>
-<label for="English">English</label><br>
-</fieldset>
-<br>
-<br>
-<button type="submit">Submit</button><button type="submit">CANCEL</button>
+  <h1>Registration Form</h1>
+  <label>Name</label><input type="text" required><br><br>
+  <label>Email</label><input type="email"><br><br>
+  <label>Password</label><input type="password" maxlength="10"><br><br>
+  <label>Mobile</label><input type="tel" maxlength="13" value="+91"><br><br>
+  <label>Address</label><textarea></textarea><br><br>
+  <label>DOB</label><input type="date"><br><br>
+  <label>Nationality</label>
+  <select><option>Indian</option><option>American</option><option>Gulf</option></select><br><br>
 
+  <label>Gender</label>
+  <div class="radio-group">
+    <label class="radio-inline"><input type="radio" name="gender" value="male">Male</label>
+    <label class="radio-inline"><input type="radio" name="gender" value="female">Female</label>
+    <label class="radio-inline"><input type="radio" name="gender" value="other">Other</label>
+  </div>
+  <br><br>
+
+  <fieldset>
+    <legend>Languages Known</legend>
+    <input type="checkbox" id="m"><label for="m">Malayalam</label><br>
+    <input type="checkbox" id="h"><label for="h">Hindi</label><br>
+    <input type="checkbox" id="e"><label for="e">English</label>
+  </fieldset><br>
+
+  <div class="center">
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+  </div>
 </form>
-
-
-
 </body>
 </html>
