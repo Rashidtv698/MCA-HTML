@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome To Registration Form</title>
+<style>
+body {
+  background: #f2f7ff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  width: 150px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  width: 90%;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: teal;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+</style>
+
+<script>
+function validate() {
+  var name = document.getElementById("nam").value;
+  var passwd = document.getElementById("pwd").value;
+  var repass = document.getElementById("rpwd").value;
+  var phone = document.getElementById("pno").value;
+
+  if (name == "") {
+    alert('Name cannot be blank');
+    return false;
+  } 
+  else if (!isNaN(name)) {
+    alert('Name must contain alphabets only!');
+    return false;
+  } 
+  else if (passwd == "") {
+    alert('Enter a Password');
+    return false;
+  } 
+  else if (passwd.length < 8) {
+    alert('Password must contain at least 8 characters');
+    return false;
+  } 
+  else if (repass == "") {
+    alert('Please re-enter your password');
+    return false;
+  } 
+  else if (passwd != repass) {
+    alert('Passwords do not match!');
+    return false;
+  } 
+  else if (phone == "") {
+    alert('Enter your phone number!');
+    return false;
+  } 
+  else if (isNaN(phone)) {
+    alert('Invalid Phone Number');
+    return false;
+  } 
+  else if (phone.length != 10) {
+    alert('Not a Valid Phone Number (need 10 digits)');
+    return false;
+  } 
+  else {
+    alert('Thank You for Registration');
+    return true;
+  }
+}
+</script>
+</head>
+
+<body>
+  <form onsubmit="return validate()">
+    <h2>Registration Form</h2>
+    <label>Name</label><br>
+    <input type="text" placeholder="Enter your name" id="nam"><br>
+
+    <label>Password</label><br>
+    <input type="password" placeholder="Enter password" id="pwd"><br>
+
+      <label>Re-enter Password</label><br>
+    <input type="password" placeholder="Re-enter password" id="rpwd"><br>
+
+    <label>Phone Number</label><br>
+    <input type="text" placeholder="Enter phone number" id="pno"><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
